@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soni Yadav — Full Stack Developer</title>
+  <meta name="description" content="Soni Yadav is a full stack developer in Lucknow with 4+ years in PHP, Laravel, REST APIs, and complete web products.">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-size='12' fill='%2300d4ff'%3ESY%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-text">SY</div>
+    </div>
+  </div>
+  <div class="cursor-dot" hidden></div>
+  <div class="cursor-outline" hidden></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home"><span class="logo-bracket">{</span> SY <span class="logo-bracket">}</span></a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span class="badge-dot"></span> Open to roles</div>
+      <h1 class="hero-name">
+        <span class="hero-name-first">Soni</span>
+        <span class="hero-name-last">Yadav</span>
+      </h1>
+      <div class="hero-typed-wrapper">
+        <span class="typed-prefix">I build </span><span class="typed-text" id="typed"></span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-summary">Full stack developer with <strong>4+ years</strong> in <strong>PHP and Laravel</strong>. I ship backends, REST APIs, and the panels people use — including <strong>Razorpay, CCAvenue, and Google Maps</strong>.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-sym">+</span><span class="stat-label">Years</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Products</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Companies</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="resume.pdf"><i class="fas fa-file-alt"></i> View Resume</a>
+        <a class="btn btn-ghost" href="#projects"><i class="fas fa-layer-group"></i> View Work</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:yadavsoni828@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+918382093069" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        <a href="https://www.linkedin.com/in/soni-yadav-834a181ab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-avatar-ring">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="avatar-placeholder"><span class="avatar-initials">SY</span></div>
+        <div class="floating-badge fb-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt=""> Laravel</div>
+        <div class="floating-badge fb-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt=""> PHP</div>
+        <div class="floating-badge fb-3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt=""> React</div>
+        <div class="floating-badge fb-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt=""> MySQL</div>
+        <div class="floating-badge fb-5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt=""> Docker</div>
+      </div>
+      <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">01 / About</div>
+        <h2 class="section-title">Who I am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo-col reveal-up">
+          <div class="about-photo-frame">
+            <span class="about-initials-big">SY</span>
+            <div class="about-photo-overlay">
+              <div class="about-photo-stats">
+                <div class="aph-stat"><span class="aph-val">4+</span><span class="aph-lbl">Years</span></div>
+                <div class="aph-stat"><span class="aph-val">4</span><span class="aph-lbl">Products</span></div>
+                <div class="aph-stat"><span class="aph-val">3</span><span class="aph-lbl">Companies</span></div>
+              </div>
+            </div>
+            <div class="about-photo-badge"><i class="fas fa-check-circle"></i> Open to roles</div>
+          </div>
+        </div>
+        <div class="about-text reveal-left">
+          <p>I’m a <strong>full stack developer</strong> based in Lucknow. For four years I’ve built the backend, the API, and the screens in front of it — mostly in <strong>PHP and Laravel</strong>.</p>
+          <p>At MedCab I built an ambulance booking platform from scratch. At Auguras I kept Laravel systems, MySQL, and payment integrations running. Before that, at MPLUSE Fintech, I shipped sites in Core PHP and Laravel.</p>
+          <div class="about-info-grid">
+            <div class="info-item"><span class="info-label">Location</span><span class="info-value">Lucknow, India</span></div>
+            <div class="info-item"><span class="info-label">Email</span><span class="info-value">yadavsoni828@gmail.com</span></div>
+            <div class="info-item"><span class="info-label">Phone</span><span class="info-value">+91 83820 93069</span></div>
+            <div class="info-item"><span class="info-label">Focus</span><span class="info-value">PHP · Laravel · REST</span></div>
+            <div class="info-item"><span class="info-label">Degree</span><span class="info-value">B.Tech, CSE · 2025</span></div>
+            <div class="info-item"><span class="info-label">Diploma</span><span class="info-value">GG Polytechnic, Varanasi</span></div>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <article class="about-card"><div class="about-card-icon"><i class="fas fa-plug"></i></div><h3>APIs</h3><p>REST APIs for web apps and for partner, driver, and consumer mobile apps.</p></article>
+          <article class="about-card"><div class="about-card-icon"><i class="fas fa-credit-card"></i></div><h3>Payments</h3><p>Razorpay and CCAvenue, plus the other gateways those products needed.</p></article>
+          <article class="about-card"><div class="about-card-icon"><i class="fas fa-layer-group"></i></div><h3>Full stack</h3><p>Admin and hospital panels in HTML, CSS, and JavaScript on a Laravel backend.</p></article>
+          <article class="about-card"><div class="about-card-icon"><i class="fas fa-database"></i></div><h3>Data</h3><p>MySQL query work, with MongoDB and Redis beside the main database.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">02 / Experience</div>
+        <h2 class="section-title">Work history</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal-up">
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="tl-role">PHP / Laravel Developer</h3>
+                <p class="tl-company">Auguras Pvt Ltd</p>
+              </div>
+              <p class="tl-period">Feb 2024 — Feb 2026</p>
+            </div>
+            <p class="tl-desc">Built and maintained Laravel backends, designed REST APIs for web and mobile, tuned MySQL, and ran payment gateways plus other external APIs.</p>
+            <div class="tl-achievements"><span><i class="fas fa-check"></i> Laravel backends</span><span><i class="fas fa-check"></i> REST APIs</span><span><i class="fas fa-check"></i> MySQL tuning</span><span><i class="fas fa-check"></i> Payment gateways</span></div>
+            <div class="tl-tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>REST</span><span>Razorpay</span><span>CCAvenue</span></div>
+          </div>
+        </article>
+        <article class="timeline-item reveal-up">
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="tl-role">Full Stack Developer</h3>
+                <p class="tl-company">MedCab Care Pvt Ltd — Lucknow</p>
+              </div>
+              <p class="tl-period">Feb 2023 — Dec 2024</p>
+            </div>
+            <p class="tl-desc">Built the ambulance booking platform from scratch: admin, hospital, and main panels, plus APIs for partner, driver, and consumer apps.</p>
+            <div class="tl-achievements"><span><i class="fas fa-check"></i> Built from scratch</span><span><i class="fas fa-check"></i> Web panels</span><span><i class="fas fa-check"></i> Mobile APIs</span><span><i class="fas fa-check"></i> Hospital panel</span></div>
+            <div class="tl-tags"><span>Laravel</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span></div>
+          </div>
+        </article>
+        <article class="timeline-item reveal-up">
+          <div class="timeline-marker"><div class="marker-dot"></div></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="tl-role">PHP Developer</h3>
+                <p class="tl-company">MPLUSE Fintech Pvt Ltd — Lucknow</p>
+              </div>
+              <p class="tl-period">Dec 2021 — Feb 2023</p>
+            </div>
+            <p class="tl-desc">Shipped dynamic, responsive websites in Core PHP and Laravel, and built modules from the screen through to the database.</p>
+            <div class="tl-achievements"><span><i class="fas fa-check"></i> Core PHP</span><span><i class="fas fa-check"></i> Laravel modules</span></div>
+            <div class="tl-tags"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>JavaScript</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">03 / Skills</div>
+        <h2 class="section-title">Technical expertise</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="reveal-left">
+          <h3 class="skills-col-title">Core</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>PHP</span><span class="skill-pct">Advanced</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="96"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>Laravel</span><span class="skill-pct">Core</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>MySQL</span><span class="skill-pct">Core</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>JavaScript / React</span><span class="skill-pct">Working</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>REST APIs</span><span class="skill-pct">Core</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div></div>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <h3 class="skills-col-title">Also in the work</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>CodeIgniter</span><span class="skill-pct">Working</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="74"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>MongoDB / Redis</span><span class="skill-pct">Working</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="76"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>Docker</span><span class="skill-pct">Working</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>Git / GitHub</span><span class="skill-pct">Daily</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="86"></div></div></div>
+            <div class="skill-bar-item"><div class="skill-bar-header"><span>Razorpay / CCAvenue</span><span class="skill-pct">Shipped</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="84"></div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-logos-grid reveal-up">
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/php/php-original.svg" alt=""><span>PHP</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/laravel/laravel-original.svg" alt=""><span>Laravel</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt=""><span>JavaScript</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt=""><span>React</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" alt=""><span>MySQL</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mongodb/mongodb-original.svg" alt=""><span>MongoDB</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/redis/redis-original.svg" alt=""><span>Redis</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt=""><span>Docker</span></div>
+        <div class="tl-item"><img class="tech-icon--light" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt=""><span>GitHub</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/linux/linux-original.svg" alt=""><span>Linux</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/bootstrap/bootstrap-original.svg" alt=""><span>Bootstrap</span></div>
+        <div class="tl-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/codeigniter/codeigniter-plain.svg" alt=""><span>CodeIgniter</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">04 / Projects</div>
+        <h2 class="section-title">Featured work</h2>
+        <p class="section-subtitle">Booking, HR, a marketplace, and a subscription product.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal-up">
+          <div class="project-card-glow"></div>
+          <div class="project-img"><i class="fas fa-ambulance project-img-icon"></i><div class="project-img-overlay"></div><span class="project-card-number">01</span></div>
+          <div class="project-card-header"><div class="project-icon-wrap"><i class="fas fa-ambulance"></i></div><div class="project-meta"><span class="project-company">MedCab Care</span><span class="project-year">2023 – 2024</span></div></div>
+          <h3 class="project-title">MedCab Ambulance Booking</h3>
+          <p class="project-subtitle">Built from scratch</p>
+          <p class="project-desc">Admin, hospital, and main panels, plus APIs for partner, driver, and consumer apps. HTML, CSS, and JavaScript on Laravel.</p>
+          <div class="project-metrics"><div class="metric"><span class="metric-val">3</span><span class="metric-lbl">Panels</span></div><div class="metric"><span class="metric-val">API</span><span class="metric-lbl">Mobile</span></div><div class="metric"><span class="metric-val">Care</span><span class="metric-lbl">Hospital</span></div></div>
+          <div class="project-tags"><span>Laravel</span><span>JavaScript</span><span>REST</span><span>MySQL</span></div>
+          <div class="project-footer"><span class="project-role"><i class="fas fa-user"></i> Full stack</span></div>
+        </article>
+        <article class="project-card reveal-up">
+          <div class="project-card-glow project-card-glow--purple"></div>
+          <div class="project-img"><i class="fas fa-file-signature project-img-icon"></i><div class="project-img-overlay"></div><span class="project-card-number">02</span></div>
+          <div class="project-card-header"><div class="project-icon-wrap project-icon-wrap--purple"><i class="fas fa-file-signature"></i></div><div class="project-meta"><span class="project-company">Product work</span><span class="project-year">HRMS</span></div></div>
+          <h3 class="project-title">Illizeo HRMS</h3>
+          <p class="project-subtitle">Multi-tenant</p>
+          <p class="project-desc">Employee management for more than one organisation, with Adobe Sign and DocuSign in the document flow.</p>
+          <div class="project-metrics"><div class="metric"><span class="metric-val">HR</span><span class="metric-lbl">Tenants</span></div><div class="metric"><span class="metric-val">Sign</span><span class="metric-lbl">Adobe</span></div><div class="metric"><span class="metric-val">Sign</span><span class="metric-lbl">DocuSign</span></div></div>
+          <div class="project-tags"><span>Laravel</span><span>Adobe Sign</span><span>DocuSign</span><span>MySQL</span></div>
+          <div class="project-footer"><span class="project-role"><i class="fas fa-user"></i> Backend</span></div>
+        </article>
+        <article class="project-card reveal-up">
+          <div class="project-card-glow project-card-glow--amber"></div>
+          <div class="project-img"><i class="fas fa-newspaper project-img-icon"></i><div class="project-img-overlay"></div><span class="project-card-number">03</span></div>
+          <div class="project-card-header"><div class="project-icon-wrap project-icon-wrap--amber"><i class="fas fa-newspaper"></i></div><div class="project-meta"><span class="project-company">Marketplace</span><span class="project-year">Workflow</span></div></div>
+          <h3 class="project-title">LinkSelling</h3>
+          <p class="project-subtitle">Role-based</p>
+          <p class="project-desc">An article marketplace where each role sees a different step. The workflow is the product.</p>
+          <div class="project-metrics"><div class="metric"><span class="metric-val">Roles</span><span class="metric-lbl">Access</span></div><div class="metric"><span class="metric-val">Flow</span><span class="metric-lbl">Steps</span></div><div class="metric"><span class="metric-val">CMS</span><span class="metric-lbl">Articles</span></div></div>
+          <div class="project-tags"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Workflow</span></div>
+          <div class="project-footer"><span class="project-role"><i class="fas fa-user"></i> Full stack</span></div>
+        </article>
+        <article class="project-card reveal-up">
+          <div class="project-card-glow"></div>
+          <div class="project-img"><i class="fas fa-video project-img-icon"></i><div class="project-img-overlay"></div><span class="project-card-number">04</span></div>
+          <div class="project-card-header"><div class="project-icon-wrap"><i class="fas fa-video"></i></div><div class="project-meta"><span class="project-company">Subscriptions</span><span class="project-year">Paywall</span></div></div>
+          <h3 class="project-title">Content Creator Platform</h3>
+          <p class="project-subtitle">Paywall and bidding</p>
+          <p class="project-desc">A subscription product with a paywall and a bidding system. Creators, payment, and access in one place.</p>
+          <div class="project-metrics"><div class="metric"><span class="metric-val">Sub</span><span class="metric-lbl">Plans</span></div><div class="metric"><span class="metric-val">Pay</span><span class="metric-lbl">Wall</span></div><div class="metric"><span class="metric-val">Bid</span><span class="metric-lbl">Offers</span></div></div>
+          <div class="project-tags"><span>Laravel</span><span>Payments</span><span>MySQL</span><span>JavaScript</span></div>
+          <div class="project-footer"><span class="project-role"><i class="fas fa-user"></i> Full stack</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-tag">05 / Contact</div>
+        <h2 class="section-title">Let’s connect</h2>
+        <p class="section-subtitle">Open to full stack and Laravel roles. Email is the fastest reply.</p>
+      </div>
+      <div class="contact-cta-row reveal-up">
+        <a class="contact-cta-btn contact-cta-resume" href="mailto:yadavsoni828@gmail.com">
+          <span class="cta-btn-icon"><i class="fas fa-envelope"></i></span>
+          <span class="cta-btn-text"><span class="cta-btn-label">Email Soni</span><span class="cta-btn-sub">yadavsoni828@gmail.com</span></span>
+          <i class="fas fa-arrow-right cta-btn-arrow"></i>
+        </a>
+        <a class="contact-cta-btn contact-cta-cover" href="resume.pdf">
+          <span class="cta-btn-icon"><i class="fas fa-file-alt"></i></span>
+          <span class="cta-btn-text"><span class="cta-btn-label">View resume</span><span class="cta-btn-sub">PDF · 4+ years</span></span>
+          <i class="fas fa-arrow-right cta-btn-arrow"></i>
+        </a>
+        <a class="contact-cta-btn" href="tel:+918382093069">
+          <span class="cta-btn-icon"><i class="fas fa-phone"></i></span>
+          <span class="cta-btn-text"><span class="cta-btn-label">Call</span><span class="cta-btn-sub">+91 83820 93069</span></span>
+          <i class="fas fa-arrow-right cta-btn-arrow"></i>
+        </a>
+      </div>
+      <div class="contact-links-row reveal-up">
+        <a class="contact-link-card" href="mailto:yadavsoni828@gmail.com"><span class="contact-link-icon"><i class="fas fa-envelope"></i></span><span><span class="contact-link-label">Email</span><span class="contact-link-value">yadavsoni828@gmail.com</span></span></a>
+        <a class="contact-link-card" href="tel:+918382093069"><span class="contact-link-icon"><i class="fas fa-phone"></i></span><span><span class="contact-link-label">Phone</span><span class="contact-link-value">+91 83820 93069</span></span></a>
+        <a class="contact-link-card" href="https://www.linkedin.com/in/soni-yadav-834a181ab" target="_blank" rel="noopener noreferrer"><span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span><span><span class="contact-link-label">LinkedIn</span><span class="contact-link-value">soni-yadav-834a181ab</span></span></a>
+        <a class="contact-link-card" href="resume.pdf"><span class="contact-link-icon"><i class="fas fa-file-alt"></i></span><span><span class="contact-link-label">Resume</span><span class="contact-link-value">Download PDF</span></span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo"><span class="logo-bracket">{</span> SY <span class="logo-bracket">}</span></div>
+      <p class="footer-copy">© 2026 Soni Yadav · Lucknow</p>
+      <div class="footer-links">
+        <a href="mailto:yadavsoni828@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/soni-yadav-834a181ab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <button id="backToTop" type="button" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="main.js"></script>
+</body>
+</html>
